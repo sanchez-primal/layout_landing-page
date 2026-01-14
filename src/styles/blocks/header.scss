@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+
+  background-image: url(../images/header-cover-photo.png);
+  background-position: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
