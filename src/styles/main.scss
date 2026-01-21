@@ -2,8 +2,25 @@
 @import './blocks/header';
 @import './blocks/main';
 @import './blocks/top-bar';
+@import './blocks/menu';
 
 * {
   background-color: rgba(100, 120, 200, 0.2);
   outline: 1px dashed white;
+}
+
+h1, h2, h3, h4, h5, h6, p, img {
+  margin: 0;
+}
+
+img {
+  height: 150px;
+  aspect-ratio: 1;
+
+  // margin-bottom: -5px;
+  margin-bottom: -6px;
+  margin-left: -3px;
+
+  // margin-right: -3px;
+  // margin-right: -4px;
 }
