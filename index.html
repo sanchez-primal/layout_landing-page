@@ -30,7 +30,9 @@
     ></script>
   </head>
   <body class="page__body">
+
     <header class="page__header header">
+
       <div class="top-bar">
         <a href="#" class="logo-link">
           <img
@@ -53,9 +55,11 @@
       <h1 class="header__bottom">
         Take the streets.
       </h1>
+
     </header>
 
     <aside class="page__menu menu" id="menu">
+
       <div class="top-bar">
         <a href="#" class="logo-link">
           <img
@@ -72,66 +76,77 @@
         </div>
       </div>
       <!-- ... -->
+
     </aside>
 
     <main class="main">
-      <h2 class="main__section-title main__section-title--about-us" id="#about-us">
-        Move Free
-      </h2>
 
-      <p class="main__paragraph">
+      <section class="section-about-us" id="#about-us">
+        <!-- I prefix stuff so that it organizes in the file explorer. -->
+
+        <h2 class="about-us__title">
+          Move Free
+        </h2>
+
+        <p class="section__paragraph">
           Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
-      </p>
+        </p>
 
-      <h2 class="main__section-title main__section-title--compare-bikes">
-        Compare Bikes
-      </h2>
+      </section>
 
-      <!-- QUESTION: shouldn't images be under the respective header? And then place them in CSS -->
-      <img
-        class="main__picture"
-        src="./src/images/products/model-sporty-4.png"
-        alt="Bicycle, model 'Sporty 4'"
-      >
-      <h3 class="main__feature-title">
-        Sporty 4
-      </h3>
-      <div class="main__feature-description">
-        The iconic frame brought to a new performance height as a sporty, active ride.
-      </div>
-      <div class="placeholder">
-        2 590
-      </div>
+      <section class="section" id="#compare-bikes">
 
-      <img
-        class="main__picture"
-        src="./src/images/products/model-ride-in-town-st.png"
-        alt="Bicycle, model 'Ride in town ST'"
-      >
-      <h3 class="main__feature-title">
-        Ride in town ST
-      </h3>
-      <div class="main__feature-description">
-        An open frame for an upright riding position as the most comfortable ride in town.
-      </div>
-      <div class="placeholder">
-        2 590
-      </div>
+        <h2 class="section__title">
+          Compare Bikes
+        </h2>
 
-      <img
-        class="main__picture"
-        src="./src/images/products/model-agile-ride-3.png"
-        alt="Bicycle, model 'Agile ride 3'"
-      >
-      <h3 class="main__feature-title">
-        Agile ride 3
-      </h3>
-      <div class="main__feature-description">
-        The lightweight frame that has earned its street tread as a sleek, agile ride.
-      </div>
-      <div class="placeholder">
-        2 590
-      </div>
+        <!-- QUESTION: shouldn't images be under the respective header? And then place them in CSS -->
+        <img
+          class="section__picture"
+          src="./src/images/products/model-sporty-4.png"
+          alt="Bicycle, model 'Sporty 4'"
+        >
+        <h3 class="main__feature-title">
+          Sporty 4
+        </h3>
+        <div class="main__feature-description">
+          The iconic frame brought to a new performance height as a sporty, active ride.
+        </div>
+        <div class="placeholder">
+          2 590
+        </div>
+
+        <img
+          class="main__picture"
+          src="./src/images/products/model-ride-in-town-st.png"
+          alt="Bicycle, model 'Ride in town ST'"
+        >
+        <h3 class="main__feature-title">
+          Ride in town ST
+        </h3>
+        <div class="main__feature-description">
+          An open frame for an upright riding position as the most comfortable ride in town.
+        </div>
+        <div class="placeholder">
+          2 590
+        </div>
+
+        <img
+          class="main__picture"
+          src="./src/images/products/model-agile-ride-3.png"
+          alt="Bicycle, model 'Agile ride 3'"
+        >
+        <h3 class="main__feature-title">
+          Agile ride 3
+        </h3>
+        <div class="main__feature-description">
+          The lightweight frame that has earned its street tread as a sleek, agile ride.
+        </div>
+        <div class="placeholder">
+          2 590
+        </div>
+
+      </section>
 
       <h2 class="main__section-title main__section-title--details">
         The Details

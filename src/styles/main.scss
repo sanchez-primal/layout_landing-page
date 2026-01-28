@@ -1,9 +1,15 @@
+// utility
+@import './utility/font-styles';
+@import './utility/mixins';
+
+// blocks
 @import './blocks/page';
 @import './blocks/header';
 @import './blocks/main';
 @import './blocks/top-bar';
 @import './blocks/menu';
 
+// DEV
 * {
   background-color: rgba(100, 120, 200, 0.2);
   outline: 1px dashed white;
