@@ -1,0 +1,8 @@
+.section-about-us {
+  &__title {
+    @include font-style('heading-version-md');
+  }
+  &__paragraph {
+    @include font-style('body-md');
+  }
+}

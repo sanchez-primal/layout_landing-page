@@ -1,3 +1,20 @@
-// @mixin font-style() {
+@use 'sass:map';
 
-// }
+@mixin font-style($font-name) {
+  $config: map.get($font-styles, $font-name);
+
+  // base = mobile+
+  $rules: map.get($config, 'base');
+
+  @include apply-rules($rules);
+
+  @each $breakpoint-name in ('tablet', 'desktop') {
+    @if map.has-key($config, $breakpoint-name) {
+      $rules: map.get($config, $breakpoint-name);
+
+      @media (min-width: map.get($media-breakpoints, $breakpoint-name)) {
+        @include apply-rules($rules);
+      }
+    }
+  }
+}
