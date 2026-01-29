@@ -1,0 +1,5 @@
+.section-compare-bikes {
+  &__title {
+    @include font-style('heading-version-md');
+  }
+}

@@ -84,66 +84,81 @@
       <section class="section-about-us" id="#about-us">
         <!-- I prefix stuff so that it organizes in the file explorer. -->
 
-        <h2 class="section-about-us__title">
-          Move Free
-        </h2>
+        <div utility="width-container">
+          <div utility="grid-container">
+            <h2 class="section-about-us__title">
+              Move Free
+            </h2>
 
-        <p class="section-about-us__paragraph">
-          Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
-        </p>
+            <p class="section-about-us__paragraph">
+              Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
+            </p>
+          </div>
+        </div>
 
       </section>
 
-      <section class="section" id="#compare-bikes">
+      <section class="section-compare-bikes" id="#compare-bikes">
 
-        <h2 class="section__title">
-          Compare Bikes
-        </h2>
+        <div utility="width-container">
+          <h2 class="section-compare-bikes__title">
+            Compare Bikes
+          </h2>
 
-        <!-- QUESTION: shouldn't images be under the respective header? And then place them in CSS -->
-        <img
-          class="section__picture"
-          src="./src/images/products/model-sporty-4.png"
-          alt="Bicycle, model 'Sporty 4'"
-        >
-        <h3 class="main__feature-title">
-          Sporty 4
-        </h3>
-        <div class="main__feature-description">
-          The iconic frame brought to a new performance height as a sporty, active ride.
-        </div>
-        <div class="placeholder">
-          2 590
-        </div>
-
-        <img
-          class="main__picture"
-          src="./src/images/products/model-ride-in-town-st.png"
-          alt="Bicycle, model 'Ride in town ST'"
-        >
-        <h3 class="main__feature-title">
-          Ride in town ST
-        </h3>
-        <div class="main__feature-description">
-          An open frame for an upright riding position as the most comfortable ride in town.
-        </div>
-        <div class="placeholder">
-          2 590
-        </div>
-
-        <img
-          class="main__picture"
-          src="./src/images/products/model-agile-ride-3.png"
-          alt="Bicycle, model 'Agile ride 3'"
-        >
-        <h3 class="main__feature-title">
-          Agile ride 3
-        </h3>
-        <div class="main__feature-description">
-          The lightweight frame that has earned its street tread as a sleek, agile ride.
-        </div>
-        <div class="placeholder">
-          2 590
+          <div utility="grid-container">
+            <!-- QUESTION: shouldn't images be under the respective header? And then place them in CSS
+                 ANSWER: It doesn't matter because they have to be wrapped with an <article>, and the heading scopes to that region.
+                 HTML is not linear, it's a tree.
+            -->
+            <article class="section-compare-bikes__product product-card">
+              <img
+                class="product-card__picture"
+                src="./src/images/products/model-sporty-4.png"
+                alt="Bicycle, model 'Sporty 4'"
+              >
+              <h3 class="product-card__title">
+                Sporty 4
+              </h3>
+              <div class="product-card__description">
+                The iconic frame brought to a new performance height as a sporty, active ride.
+              </div>
+              <div class="product-card__price">
+                2 590
+              </div>
+            </article>
+            <article class="section-compare-bikes__product product-card">
+              <img
+                class="product-card__picture"
+                src="./src/images/products/model-ride-in-town-st.png"
+                alt="Bicycle, model 'Ride in town ST'"
+              >
+              <h3 class="product-card__title">
+                Ride in town ST
+              </h3>
+              <div class="product-card__description">
+                An open frame for an upright riding position as the most comfortable ride in town.
+              </div>
+              <div class="product-card__price">
+                2 590
+              </div>
+            </article>
+            <article class="section-compare-bikes__product product-card">
+              <img
+                class="product-card__picture"
+                src="./src/images/products/model-agile-ride-3.png"
+                alt="Bicycle, model 'Agile ride 3'"
+              >
+              <h3 class="product-card__title">
+                Agile ride 3
+              </h3>
+              <div class="product-card__description">
+                The lightweight frame that has earned its street tread as a sleek, agile ride.
+              </div>
+              <div class="product-card__price">
+                2 590
+              </div>
+            </article>
+          </div>
         </div>
 
       </section>

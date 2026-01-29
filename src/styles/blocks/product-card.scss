@@ -1,0 +1,7 @@
+.product-card {
+  &__price {
+    &::before {
+      content: "$ ";
+    }
+  }
+}

@@ -3,6 +3,7 @@
 @import './utility/variables';
 @import './utility/font-styles';
 @import './utility/mixins';
+@import './utility/utility-classes';
 
 // blocks
 @import './blocks/page';
@@ -11,6 +12,8 @@
 @import './blocks/top-bar';
 @import './blocks/menu';
 @import './blocks/section-about-us';
+@import './blocks/section-compare-bikes';
+@import './blocks/product-card';
 
 // DEV
 * {
@@ -33,3 +36,9 @@ img {
   // margin-right: -3px;
   // margin-right: -4px;
 }
+
+
+/*
+  TODO:
+    - grid utility class: grid-template-columns with repeat()
+*/

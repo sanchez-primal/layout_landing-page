@@ -12,9 +12,21 @@
     @if map.has-key($config, $breakpoint-name) {
       $rules: map.get($config, $breakpoint-name);
 
-      @media (min-width: map.get($media-breakpoints, $breakpoint-name)) {
+      @include min-width($breakpoint-name) {
         @include apply-rules($rules);
       }
     }
+  }
+}
+
+@mixin on-tablet() {
+  @include min-width('tablet') {
+    @content;
+  }
+}
+
+@mixin on-desktop() {
+  @include min-width('desktop') {
+    @content;
   }
 }
