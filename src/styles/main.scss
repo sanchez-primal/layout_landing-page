@@ -6,39 +6,44 @@
 @import './utility/utility-classes';
 
 // blocks
+//    header
 @import './blocks/page';
 @import './blocks/header';
-@import './blocks/main';
 @import './blocks/top-bar';
+@import './blocks/logo-link';
+@import './blocks/console';
 @import './blocks/menu';
+@import './blocks/nav';
+@import './blocks/cta';
+
+//    body
+@import './blocks/main';
 @import './blocks/section-about-us';
 @import './blocks/section-compare-bikes';
 @import './blocks/product-card';
+@import './blocks/section-details';
+@import './blocks/button';
+@import './blocks/section-contact-us';
+@import './blocks/form';
+@import './blocks/contacts';
 
-// DEV
-* {
-  background-color: rgba(100, 120, 200, 0.2);
-  outline: 1px dashed white;
-}
-
-h1, h2, h3, h4, h5, h6, p, img {
-  margin: 0;
-}
-
-img {
-  height: 150px;
-  aspect-ratio: 1;
-
-  // margin-bottom: -5px;
-  margin-bottom: -6px;
-  margin-left: -3px;
-
-  // margin-right: -3px;
-  // margin-right: -4px;
-}
-
+//    footer
+@import './blocks/footer';
 
 /*
   TODO:
     - grid utility class: grid-template-columns with repeat()
+    - (?) margin is not inherited in product-card__description
+    - (?) button border radius style.
+    - h1 positioning?
+    - animate menu
+    - "footer sticky at the bottom" from the checklist?
+    - burger menu icon animation
+    - desktop phone popup with js?
+    - scrollbar
+    - all the other animations I can think of?
+
+  TODOs after completion:
+    - do we have to use width-container on header?
+    - refactor media mixins to handle all three states in one?
 */

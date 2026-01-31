@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: $form-gap;
+
+  &__text-input {
+    padding-inline: $input-padding-inline;
+    padding-block: $input-padding-block;
+    background-color: $color-light-2;
+    border: none;
+    border-radius: $fully-rounded-border;
+    font: inherit; // ah, gotcha.
+
+    @include font-style('input-text');
+  }
+
+  &__message {
+    @include font-style('input-text');
+
+    border-radius: $input-textarea-radius;
+    background-color: $color-light-2;
+    min-height: $input-textarea-min-height;
+    padding-inline: $input-padding-inline;
+    padding-block: $input-padding-block;
+    border: none;
+
+    resize: none;
+
+    // overflow-y: auto;
+    field-sizing: content;
+  }
+
+  &__submit-button {
+    margin-top: $form-button-margin;
+  }
+}

@@ -30,3 +30,23 @@
     @content;
   }
 }
+
+@mixin on-hover-smooth($props-map, $animation-target: null) {
+  $props: map.keys($props-map);
+  $transition-props: (
+    transition-duration: $transition-duration,
+    transition-property: $props,
+  );
+
+  @if $animation-target {
+    #{$animation-target} {
+      @include apply-rules($transition-props);
+    }
+  } @else {
+    @include apply-rules($transition-props);
+  }
+
+  &:hover #{$animation-target} {
+    @include apply-rules($props-map);
+  }
+}

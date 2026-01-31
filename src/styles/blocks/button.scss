@@ -1,0 +1,34 @@
+@use 'sass:map';
+@use 'sass:math';
+
+.button {
+  @include font-style('button-text');
+
+  background-color: $color-light-1;
+  border: none;
+
+  padding-inline: $button-padding-inline;
+  padding-block: $button-padding-block;
+  border-radius: $fully-rounded-border;
+
+  // this is for those buttons that are links.
+  color: $color-dark-1;
+  text-decoration: none;
+  text-align: center;
+
+  // $font-name: 'button-text';
+  // @include font-style($font-name);
+  // $padding-block: 14.5px;
+  // padding-block: $padding-block;
+  // border-radius: #{math.div(map.get(map.get(map.get($font-styles, $font-name), 'base'), line-height), 2) + $padding-block};
+
+  @include on-hover-smooth(
+    (
+      box-shadow: 0 0 $button-shadow-blur-size $color-light-1,
+    )
+  );
+
+  &:hover {
+    cursor: pointer;
+  }
+}

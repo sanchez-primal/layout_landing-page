@@ -1,4 +1,11 @@
 .top-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  height: $top-bar-height-mobile;
+
+  @include on-tablet {
+    height: $top-bar-height-tablet;
+  }
 }

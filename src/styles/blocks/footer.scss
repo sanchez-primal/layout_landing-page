@@ -1,0 +1,16 @@
+.footer {
+  // doesn't work currently
+  background-image: url('../images/footer-cover-photo.png');
+  background-size: cover;
+  background-position: $footer-bg-position;
+
+  height: $footer-height-mobile;
+
+  @include on-tablet {
+    height: $footer-height-tablet;
+  }
+
+  @include on-desktop {
+    height: $footer-height-desktop;
+  }
+}

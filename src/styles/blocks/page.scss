@@ -1,7 +1,9 @@
 .page {
   // is there a reason to not name this class "html"?
   font-family: Poppins, sans-serif;
-  color: white;
+  color: $color-light-1;
+
+  scroll-behavior: smooth;
 
   &__body {
     margin: 0;
@@ -9,11 +11,6 @@
 
   &__menu {
     position: fixed;
-
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
     inset: 0;
 
     visibility: hidden;
@@ -21,5 +18,9 @@
     &:target {
       visibility: visible;
     }
+  }
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
   }
 }

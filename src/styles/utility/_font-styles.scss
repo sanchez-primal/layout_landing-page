@@ -1,52 +1,54 @@
 $font-styles: (
   // base = mobile+
-
-  'display-hero': (
-    'base': (
-      font-weight: 700,
-      font-size: 36px,
-      line-height: 100%,
-      letter-spacing: -1.5px,
+  'display-hero':
+    (
+      'base': (
+        font-weight: 700,
+        font-size: 36px,
+        line-height: 100%,
+        letter-spacing: -1.5px,
+      ),
+      'tablet': (
+        font-size: 64px,
+      ),
+      'desktop': (
+        font-size: 80px,
+      ),
     ),
-    'tablet': (
-      font-size: 64px,
-    ),
-    'desktop': (
-      font-size: 80px,
-    ),
-  ),
-
-  // with "version" because they're mostly similar
-  'heading-version-sm': (
-    'base': (
-      font-weight: 500,
-      font-size: 32px,
-      line-height: 100%,
-      letter-spacing: -1.5px,
-    ),
-    'tablet': (
-      font-size: 48px,
-    ),
-    'desktop': (
-      font-weight: 600,
-    ),
-  ),
 
   // with "version" because they're mostly similar
-  'heading-version-md': (
-    'base': (
-      font-weight: 500,
-      font-size: 32px,
-      line-height: 100%,
-      letter-spacing: -1.5px,
+  'heading-version-sm':
+    (
+      'base': (
+        font-weight: 500,
+        font-size: 32px,
+        line-height: 100%,
+        letter-spacing: -1.5px,
+      ),
+      'tablet': (
+        font-size: 48px,
+      ),
+      'desktop': (
+        font-weight: 600,
+      ),
     ),
-    'tablet': (
-      font-size: 48px,
+
+  // with "version" because they're mostly similar
+  'heading-version-md':
+    (
+      'base': (
+        font-weight: 500,
+        font-size: 32px,
+        line-height: 100%,
+        letter-spacing: -1.5px,
+      ),
+      'tablet': (
+        font-size: 48px,
+      ),
+      'desktop': (
+        font-size: 64px,
+      ),
     ),
-    'desktop': (
-      font-size: 64px,
-    ),
-  ),
 
   'body-xs': (
     'base': (
@@ -84,17 +86,20 @@ $font-styles: (
     ),
   ),
 
-  'ui-caps': (
-    'base': (
-      font-weight: 600,
-      font-size: 22px,
-      line-height: 22px,
-      letter-spacing: 2px,
+  // If you need a non-uppercase font -- make a separate one
+  'ui-caps':
+    (
+      'base': (
+        font-weight: 600,
+        font-size: 22px,
+        line-height: 22px,
+        letter-spacing: 2px,
+        text-transform: uppercase,
+      ),
+      'desktop': (
+        font-weight: 700,
+      ),
     ),
-    'desktop': (
-      font-weight: 700,
-    ),
-  ),
 
   'action-strong': (
     'base': (
@@ -109,17 +114,19 @@ $font-styles: (
   ),
 
   // is this "eyebrow"?
-  'utility-text': (
-    'base': (
-      font-weight: 600,
-      font-size: 12px,
-      line-height: 16px,
-      letter-spacing: 2px,
+  'utility-text':
+    (
+      'base': (
+        font-weight: 600,
+        font-size: 12px,
+        line-height: 16px,
+        letter-spacing: 2px,
+        text-transform: uppercase,
+      ),
+      'desktop': (
+        font-weight: 700,
+      ),
     ),
-    'desktop': (
-      font-weight: 700,
-    ),
-  ),
 
   'button-text': (
     'base': (
@@ -139,14 +146,25 @@ $font-styles: (
     ),
   ),
 
-  'form-placeholder': (
+  'input-text': (
     'base': (
       font-weight: 400,
       font-size: 14px,
       line-height: 20px,
       letter-spacing: 0,
     ),
-  )
+  ),
+
+  // this one I didn't notice till the end
+  'popup-text':
+    (
+      'base': (
+        font-weight: 700,
+        font-size: 12px,
+        line-height: 16px,
+        letter-spacing: 2px,
+      ),
+    )
 );
 
 /*
@@ -161,7 +179,7 @@ $font-styles: (
  H 2 body-xs
  I 3 body-xl
  J 1 heading-version-sm (with "version" because they're mostly similar)
- K 1 form-placeholder
+ K 1 input-text (previously form-placeholder)
  L 1 label
  M 1 body-sm
 
