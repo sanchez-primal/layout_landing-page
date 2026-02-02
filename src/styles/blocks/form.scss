@@ -8,6 +8,7 @@
     padding-block: $input-padding-block;
     background-color: $color-light-2;
     border: none;
+    outline: none;
     border-radius: $fully-rounded-border;
     font: inherit; // ah, gotcha.
 
@@ -15,6 +16,8 @@
   }
 
   &__message {
+    font: inherit;
+
     @include font-style('input-text');
 
     border-radius: $input-textarea-radius;
@@ -23,6 +26,7 @@
     padding-inline: $input-padding-inline;
     padding-block: $input-padding-block;
     border: none;
+    outline: none;
 
     resize: none;
 

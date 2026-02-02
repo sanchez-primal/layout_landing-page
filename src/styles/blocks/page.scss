@@ -5,6 +5,12 @@
 
   scroll-behavior: smooth;
 
+  // googled this out; it's to prevent the console shifting when the menu is opened.
+  scrollbar-gutter: stable;
+
+  // SimpleBar
+  // overflow: hidden;
+
   &__body {
     margin: 0;
   }
@@ -13,14 +19,18 @@
     position: fixed;
     inset: 0;
 
-    visibility: hidden;
+    transform: translateX(100%);
+
+    transition-duration: $transition-duration;
+    transition-property: transform;
 
     &:target {
-      visibility: visible;
+      transform: translateX(0%);
     }
   }
 
   &:has(.page__menu:target) {
     overflow: hidden;
+    background-color: $color-light-3;
   }
 }

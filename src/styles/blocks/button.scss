@@ -2,10 +2,13 @@
 @use 'sass:math';
 
 .button {
+  font-family: inherit; // without this the button.form__submit-button.button was Arial. The a.section-details__action.button worked without this.
+
   @include font-style('button-text');
 
   background-color: $color-light-1;
   border: none;
+  cursor: url('../images/cursor/cursor-outline-white.png'), pointer;
 
   padding-inline: $button-padding-inline;
   padding-block: $button-padding-block;
@@ -27,8 +30,4 @@
       box-shadow: 0 0 $button-shadow-blur-size $color-light-1,
     )
   );
-
-  &:hover {
-    cursor: pointer;
-  }
 }

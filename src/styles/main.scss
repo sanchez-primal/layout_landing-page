@@ -32,18 +32,19 @@
 
 /*
   TODO:
-    - grid utility class: grid-template-columns with repeat()
-    - (?) margin is not inherited in product-card__description
-    - (?) button border radius style.
-    - h1 positioning?
-    - animate menu
-    - "footer sticky at the bottom" from the checklist?
-    - burger menu icon animation
-    - desktop phone popup with js?
-    - scrollbar
-    - all the other animations I can think of?
+  - h1 positioning?
+  - how to make elements that are initially invisible also invisible to screen readers without breaking the animation?
+  - more variables.
 
-  TODOs after completion:
+  TODO after completion:
+    - grid utility class: grid-template-columns with repeat()
+    - smarter transition mixin? For our usecases.
     - do we have to use width-container on header?
     - refactor media mixins to handle all three states in one?
+    - burger menu animation is wierd, I want the lines to shrink, not fade.
+    - desktop phone popup with js?
+    - all the other animations I can think of?
+    - more mixins for duplicated code
+    - verify menu appearance animation
+    - scrollbar with JS: get width, add padding.
 */

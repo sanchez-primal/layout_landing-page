@@ -76,10 +76,5 @@
     @include font-style('body-xl');
 
     margin-top: $product-card-price-margin;
-
-    &::before {
-      // this should probably be in HTML
-      content: '$ ';
-    }
   }
 }

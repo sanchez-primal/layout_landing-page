@@ -15,6 +15,7 @@
     text-decoration: none;
     color: inherit;
     position: relative;
+    cursor: url('../images/cursor/cursor-outline-black.png'), pointer;
 
     // @include on-hover-smooth((width: 100%), #{&}::after);
     // it doesn't work with the colons ;(

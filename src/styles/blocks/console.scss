@@ -9,6 +9,7 @@
   &__button {
     width: $console-cell-size-mobile;
     aspect-ratio: 1;
+    cursor: url('../images/cursor/cursor-outline-white.png'), pointer;
 
     @include on-tablet {
       width: $console-cell-size-tablet;
@@ -22,7 +23,9 @@
     }
 
     &--menu {
-      background-image: url('../images/icons/icon-burger-menu-off.png');
+      background-image: url('../images/icons/icon-burger-menu-off.svg');
+
+      @include on-hover-smooth((background-image: url('../images/icons/icon-burger-menu-on.svg')))
     }
 
     &--close {
