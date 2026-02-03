@@ -40,9 +40,13 @@ $fully-rounded-border: 9999px;
 
 // header
 $header-bg-position: 85%;
-$header-bottom-spacing-mobile: 270px;
-$header-bottom-spacing-tablet: 306px;
-$header-bottom-spacing-desktop: 300px;
+$header-padding-bottom-mobile: 88px;
+$header-padding-bottom-tablet: 130px;
+$header-padding-bottom-desktop: 203px;
+
+// $header-bottom-spacing-mobile: 270px;
+// $header-bottom-spacing-tablet: 306px;
+// $header-bottom-spacing-desktop: 300px;
 
 // top-bar
 $top-bar-height-mobile: 86px;
