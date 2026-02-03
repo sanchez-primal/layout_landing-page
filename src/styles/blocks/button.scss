@@ -2,7 +2,7 @@
 @use 'sass:math';
 
 .button {
-  font-family: inherit; // without this the button.form__submit-button.button was Arial. The a.section-details__action.button worked without this.
+  font-family: $font-family; // without this the button.form__submit-button.button was Arial. The a.section-details__action.button worked without this.
 
   @include font-style('button-text');
 

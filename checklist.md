@@ -32,4 +32,4 @@
     ```html
     <form onsubmit="this.reset(); return false;">
     ```
-16. [ ] Make the `footer` sticky at the bottom with `z-index: -1` to get a `fixed` background effect.
+16. [x] Make the `footer` sticky at the bottom with `z-index: -1` to get a `fixed` background effect.

@@ -1,6 +1,6 @@
 .page {
   // is there a reason to not name this class "html"?
-  font-family: Poppins, sans-serif;
+  font-family: $font-family;
   color: $color-light-1;
 
   scroll-behavior: smooth;

@@ -10,13 +10,13 @@
     border: none;
     outline: none;
     border-radius: $fully-rounded-border;
-    font: inherit; // ah, gotcha.
+    font-family: $font-family; // ah, gotcha.
 
     @include font-style('input-text');
   }
 
   &__message {
-    font: inherit;
+    font-family: $font-family;
 
     @include font-style('input-text');
 

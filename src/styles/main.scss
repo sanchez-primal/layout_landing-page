@@ -32,9 +32,6 @@
 
 /*
   TODO:
-  - h1 positioning?
-  - how to make elements that are initially invisible also invisible to screen readers without breaking the animation?
-  - more variables.
 
   TODO after completion:
     - grid utility class: grid-template-columns with repeat()
@@ -45,6 +42,11 @@
     - desktop phone popup with js?
     - all the other animations I can think of?
     - more mixins for duplicated code
+    - more variables.
     - verify menu appearance animation
     - scrollbar with JS: get width, add padding.
+    - how to make elements that are initially invisible also invisible to screen readers without breaking the animation?
+
+  Notes:
+    - flex for h1 positioning requires 203px margin/paddin-bottom on desktop, thus I went for spacing between header top and bottom, which has more promising numbers.
 */

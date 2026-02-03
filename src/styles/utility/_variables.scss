@@ -31,6 +31,7 @@ $color-light-3: #c2c2c2;
 $color-light-highlight: #dee1b5; // eyeballed
 
 // other
+$font-family: Poppins, sans-serif;
 $transition-duration: 0.5s;
 $fully-rounded-border: 9999px;
 
@@ -48,7 +49,8 @@ $top-bar-height-mobile: 86px;
 $top-bar-height-tablet: 128px;
 
 // logo-link
-//    empty
+$logo-link-height-mobile: 38px;
+$logo-link-height-tablet: 56px;
 
 // console
 $console-cell-size-mobile: 24px;
@@ -67,9 +69,6 @@ $nav-li-gap: 32px;
 $cta-line-spacing: 16px;
 $cta-action-line-thickness: 1px;
 $cta-action-line-spacing: 8px;
-
-// popup
-//    empty
 
 // main
 $main-padding-top-mobile: 60px;
